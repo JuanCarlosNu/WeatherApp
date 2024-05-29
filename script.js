@@ -2,6 +2,8 @@ const urlBase = "https://api.openweathermap.org/data/2.5/weather";
 
 const API_KEY = "4a4cfed1df974ccefdb2d87e31e01fec";
 
+const diffKelvin = 273.15;
+
 document.getElementById("searchButton").addEventListener("click", () => {
   const city = document.getElementById("cityInput").value;
   if (city) {
