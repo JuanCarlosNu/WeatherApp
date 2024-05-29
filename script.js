@@ -16,7 +16,7 @@ document.getElementById("searchButton").addEventListener("click", () => {
 function fetchWeather(city) {
   fetch(`${urlBase}?q=${city}&appid=${API_KEY}&lang=es`)
     .then((data) => data.json())
-    .then((data) => console.log(data));
+    .then((data) => showWeatherData(data));
 }
 
 function showWeatherData(data) {
